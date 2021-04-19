@@ -4,88 +4,124 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="#F8F9FD"
     tools:context=".view.activity.LoginActivity">
+
     <TextView
+
         android:id="@+id/textview_login_logo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:layout_centerHorizontal="true"/>
+        android:layout_height="215dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_logo"
+        />
+
     <RelativeLayout
         android:id="@+id/relativelayout_login_google"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/textview_login_logo"
-        android:layout_width="440dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="30.89dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorGoogle"
-        >
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30sp"
+        android:background="@drawable/login_rectanglegoogle">
+
         <TextView
             android:id="@+id/textview_login_icongoogle"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="41dp"
-            android:background="@color/colorAccent"/>
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_login_googleplus" />
+
         <TextView
-            android:layout_toRightOf="@id/textview_login_icongoogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="51sp"
+            android:layout_toRightOf="@id/textview_login_icongoogle"
             android:text="@string/login_signin_google"
-            android:layout_centerVertical="true"/>
+            android:textColor="#F8F9FD"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/relativelayout_login_facebook"
-        android:layout_below="@+id/relativelayout_login_google"
-        android:layout_width="440dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="30.89dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
-        android:background="@color/colorFacebook"
-        >
+        android:layout_below="@+id/relativelayout_login_google"
+        android:background="@drawable/login_rectanglefacebook">
+
         <TextView
             android:id="@+id/textview_login_iconfacebook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="41dp"
-            android:background="@color/colorAccent"/>
+            android:layout_width="12sp"
+            android:layout_height="23sp"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="20sp"
+            android:background="@drawable/ic_login_facebook" />
+
         <TextView
-            android:layout_toRightOf="@id/textview_login_iconfacebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="30dp"
+            android:layout_toRightOf="@id/textview_login_iconfacebook"
             android:text="@string/login_signin_facebook"
-            android:layout_centerVertical="true"/>
+            android:textColor="#F8F9FD"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
     </RelativeLayout>
+
     <RelativeLayout
-        android:layout_below="@id/relativelayout_login_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/relativelayout_login_facebook"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorBottomMain"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="118dp">
+        >
+
         <CheckBox
             android:id="@+id/checkbox_login"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            />
+            android:layout_width="22sp"
+            android:layout_height="22sp"
+            android:background="@drawable/ic_login_checkboxoutline"
+            android:button="@drawable/login_checkboxstyle" />
+
         <TextView
             android:id="@+id/textview_login_acceptterm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/checkbox_login"
+            android:layout_toRightOf="@+id/checkbox_login"
             android:text="@string/login_acceptterm"
-            android:paddingTop="4dp"
-            />
+            android:textColor="@android:color/black"
+            android:padding="3dp"
+            android:textSize="12.5dp" />
     </RelativeLayout>
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_copyright"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="7dp"
-        android:textColor="@color/colorBlueLogin"/>
-
+        android:textColor="@color/colorBlueLogin"
+        android:gravity="center"
+        android:layout_marginTop="85dp"
+        android:layout_below="@+id/relativelayout_login_facebook"
+        android:textSize="10.5dp"
+        />
 
 </RelativeLayout>
