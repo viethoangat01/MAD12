@@ -28,7 +28,7 @@
         android:layout_marginLeft="30sp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30sp"
-        android:background="@drawable/login_rectanglegg">
+        android:background="@drawable/login_rectanglegoogle">
 
         <TextView
             android:id="@+id/textview_login_icongoogle"
@@ -61,7 +61,7 @@
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/relativelayout_login_google"
-        android:background="@drawable/login_rectanglefb">
+        android:background="@drawable/login_rectanglefacebook">
 
         <TextView
             android:id="@+id/textview_login_iconfacebook"
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/relativelayout_login_facebook"
         android:layout_marginTop="40dp"
-        android:background="#F8F9FD"
+        android:background="@color/colorBottomMain"
         android:layout_centerHorizontal="true"
         >
 
@@ -99,7 +99,7 @@
             android:id="@+id/checkbox_login"
             android:layout_width="22sp"
             android:layout_height="22sp"
-            android:background="@drawable/ic_login_cboutline"
+            android:background="@drawable/ic_login_checkboxoutline"
             android:button="@drawable/login_checkboxstyle" />
 
         <TextView
@@ -108,7 +108,7 @@
             android:layout_height="wrap_content"
             android:layout_toRightOf="@+id/checkbox_login"
             android:text="@string/login_acceptterm"
-            android:textColor="#000000"
+            android:textColor="@android:color/black"
             android:padding="3dp"
             android:textSize="12.5dp" />
     </RelativeLayout>

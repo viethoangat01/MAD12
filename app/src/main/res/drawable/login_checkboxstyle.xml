@@ -2,7 +2,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 <!--Style cho checkbox-->
     <item android:state_checked="false"
-        android:drawable="@drawable/ic_login_cboutline"/>
+        android:drawable="@drawable/ic_login_checkboxoutline"/>
     <item android:state_checked="true"
-        android:drawable="@drawable/ic_login_cbcheck"/>
+        android:drawable="@drawable/ic_login_checkboxiconcheck"/>
 </selector>

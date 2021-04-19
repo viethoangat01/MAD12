@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">MAD12</string>
-
+    <string name="all_logoname">Team 12</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="login_signin_google">Sign in with Google</string>
     <string name="login_signin_facebook">Sign in with Facebook</string>
     <string name="login_acceptterm">I agree to the Terms and Conditions</string>
     <string name="login_copyright">Copyright @ 2021-2022 All rights reserved Team12</string>
+
+    <string name="main_icon_home">Trang chủ</string>
+    <string name="main_icon_selflearning">Tự học</string>
+    <string name="main_icon_notification">Thông báo</string>
+    <string name="main_icon_document">Tài liệu</string>
+
+
+
 
 
 
