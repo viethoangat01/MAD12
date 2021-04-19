@@ -6,9 +6,178 @@
     tools:context=".view.fragment.HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Home Fragment" />
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="31dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào "/>
+            <TextView
+                android:id="@+id/textview_homefragment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn muốn học gì hôm nay"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorBannerMain">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/main_choose_subject"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_one"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjectone"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_two"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/cardview_homefragment_one">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjecttwo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_three"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/cardview_homefragment_two">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjectthree"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_four"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/cardview_homefragment_one"
+                    android:layout_marginTop="28dp">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjectfour"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_five"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/cardview_homefragment_two"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/cardview_homefragment_four">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjectfive"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_homefragment_six"
+                    android:layout_width="140dp"
+                    android:layout_height="110dp"
+                    android:layout_below="@id/cardview_homefragment_three"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/cardview_homefragment_five">
+                    <TextView
+                        android:id="@+id/textview_homefragment_subjectsix"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@mipmap/ic_launcher"
+                        android:layout_gravity="center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homefragment_subject_math"
+                        android:layout_marginTop="77dp"
+                        android:layout_gravity="center_horizontal"
+                        />
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
