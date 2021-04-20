@@ -6,9 +6,141 @@
     tools:context=".view.fragment.SelfLearningFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="SelfLearning Fragment" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="31dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chào " />
+
+            <TextView
+                android:id="@+id/textview_selflearningfragment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Bạn muốn học gì hôm nay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorBannerMain"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon1"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon1"
+                    android:text="@string/selflearningfragment_title_testonline"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon1"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon1"
+                    android:text="@string/selflearningfragment_desc_testonline" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon2"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon2"
+                    android:text="@string/selflearningfragment_title_testoffline"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon2"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon2"
+                    android:text="@string/selflearningfragment_desc_testoffline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon3"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@mipmap/ic_launcher_round" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon3"
+                    android:text="@string/selflearningfragment_title_revise"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon3"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon3"
+                    android:text="@string/selflearningfragment_desc_revise" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

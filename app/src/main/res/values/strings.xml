@@ -15,7 +15,20 @@
     <string name="main_icon_notification">Thông báo</string>
     <string name="main_icon_document">Tài liệu</string>
 
+    <string name="documentfragment_title_document">Tài liệu</string>
+    <string name="documentfragment_title_exam">Đề thi</string>
+
     <string name="homefragment_subject_math">Toán</string>
+
+    <string name="selflearningfragment_desc_testonline">Tham gia thi online ngay bây giờ</string>
+    <string name="selflearningfragment_desc_testoffline">Luyện đề ngay bây giờ</string>
+    <string name="selflearningfragment_desc_revise">Ôn tập</string>
+    <string name="selflearningfragment_title_revise">Ôn tập theo chủ đề</string>
+    <string name="selflearningfragment_title_testonline">Thi thử online</string>
+    <string name="selflearningfragment_title_testoffline">Luyện đề</string>
+
+
+
 
 
 

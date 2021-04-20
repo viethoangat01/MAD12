@@ -7,7 +7,10 @@
     <color name="colorBlueLogin">#16C9FF</color>
     <color name="colorBottomMain">#F8F9FD</color>
 
+    <color name="colorCheckBox">#F0F0F0</color>
+
     <color name="colorFacebook">#3B5998</color>
+    <color name="colorFileImg">#4CD4A8</color>
 
     <color name="colorGoogle">#DD4B39</color>
 
