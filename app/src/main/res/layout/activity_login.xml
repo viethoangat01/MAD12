@@ -5,11 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    android:background="#F8F9FD"
+    android:background="@color/colorBottomMain"
     tools:context=".view.activity.LoginActivity">
 
     <TextView
-
         android:id="@+id/textview_login_logo"
         android:layout_width="wrap_content"
         android:layout_height="215dp"
@@ -46,7 +45,7 @@
             android:layout_marginRight="51sp"
             android:layout_toRightOf="@id/textview_login_icongoogle"
             android:text="@string/login_signin_google"
-            android:textColor="#F8F9FD"
+            android:textColor="@color/colorBottomMain"
             android:textSize="16dp"
             android:textStyle="bold"
             />
@@ -80,7 +79,7 @@
             android:layout_marginRight="30dp"
             android:layout_toRightOf="@id/textview_login_iconfacebook"
             android:text="@string/login_signin_facebook"
-            android:textColor="#F8F9FD"
+            android:textColor="@color/colorBottomMain"
             android:textSize="16dp"
             android:textStyle="bold"
             />
