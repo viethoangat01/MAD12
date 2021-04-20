@@ -7,27 +7,31 @@
     tools:context=".view.activity.MainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorFacebook">
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
         <TextView
             android:id="@+id/textview_main_menu"
+            android:layout_marginTop="10dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/ic_main_document"
+            android:background="@drawable/ic_main_menu_40"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="9dp"/>
         <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-
+            android:textStyle="bold"
             android:text="@string/all_logoname"/>
         <TextView
+            android:layout_marginRight="10dp"
             android:id="@+id/textview_main_profile"
+            android:layout_marginTop="10dp"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/ic_main_home"
+            android:background="@drawable/ic_main_userTopRight_40"
             android:layout_alignParentRight="true"/>
     </RelativeLayout>
     <androidx.viewpager.widget.ViewPager
