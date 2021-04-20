@@ -39,6 +39,7 @@
             android:background="@drawable/ic_login_googleplus" />
 
         <TextView
+            android:id="@+id/textview_login_titlegoogle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
@@ -72,6 +73,7 @@
             android:background="@drawable/ic_login_facebook" />
 
         <TextView
+            android:id="@+id/textview_login_titlefacebook"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
