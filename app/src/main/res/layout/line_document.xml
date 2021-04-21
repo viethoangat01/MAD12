@@ -46,7 +46,7 @@
         android:id="@+id/textview_linedocument_download"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:background="@mipmap/ic_launcher"
+        android:background="@drawable/ic_linedocument_download_30"
         android:layout_alignParentRight="true"
         android:layout_marginTop="17dp"/>
 
