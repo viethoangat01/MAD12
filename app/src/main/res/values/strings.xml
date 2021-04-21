@@ -19,6 +19,12 @@
     <string name="documentfragment_title_exam">Đề thi</string>
 
     <string name="homefragment_subject_math">Toán</string>
+    <string name="homefragment_subject_physic">Vật lý</string>
+    <string name="homefragment_subject_chemistry">Hóa học</string>
+    <string name="homefragment_subject_literary">Văn học</string>
+    <string name="homefragment_subject_geography">Địa lý</string>
+    <string name="homefragment_subject_english">Tiếng Anh</string>
+
 
     <string name="selflearningfragment_desc_testonline">Tham gia thi online ngay bây giờ</string>
     <string name="selflearningfragment_desc_testoffline">Luyện đề ngay bây giờ</string>
