@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.TestOnlineScheduleActivity">
+    <RelativeLayout
+        android:id="@+id/relativelayout_testonlineschedule"
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBannerTestOnline">
+        <TextView
+            android:id="@+id/textview_testonlineschedule_iconback"
+            android:background="@drawable/ic_testonlineschedule_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selflearningfragment_title_testonline"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/relativelayout_testonlineschedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/line_testonlineschedule"/>
+
+
+
+</RelativeLayout>
