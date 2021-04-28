@@ -30,6 +30,7 @@
         android:background="@drawable/login_rectanglegoogle">
 
         <TextView
+
             android:id="@+id/textview_login_icongoogle"
             android:layout_width="30sp"
             android:layout_height="30sp"

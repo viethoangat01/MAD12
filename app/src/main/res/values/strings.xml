@@ -9,10 +9,29 @@
     <string name="login_acceptterm">I agree to the Terms and Conditions</string>
     <string name="login_copyright">Copyright @ 2021-2022 All rights reserved Team12</string>
 
+    <string name="main_choose_subject">Chọn môn học</string>
     <string name="main_icon_home">Trang chủ</string>
     <string name="main_icon_selflearning">Tự học</string>
     <string name="main_icon_notification">Thông báo</string>
     <string name="main_icon_document">Tài liệu</string>
+
+    <string name="documentfragment_title_document">Tài liệu</string>
+    <string name="documentfragment_title_exam">Đề thi</string>
+
+    <string name="homefragment_subject_math">Toán</string>
+    <string name="homefragment_subject_physic">Vật lý</string>
+    <string name="homefragment_subject_chemistry">Hóa học</string>
+    <string name="homefragment_subject_literary">Văn học</string>
+    <string name="homefragment_subject_geography">Địa lý</string>
+    <string name="homefragment_subject_english">Tiếng Anh</string>
+
+
+    <string name="selflearningfragment_desc_testonline">Tham gia thi online ngay bây giờ</string>
+    <string name="selflearningfragment_desc_testoffline">Luyện đề ngay bây giờ</string>
+    <string name="selflearningfragment_desc_revise">Ôn tập</string>
+    <string name="selflearningfragment_title_revise">Ôn tập theo chủ đề</string>
+    <string name="selflearningfragment_title_testonline">Thi thử online</string>
+    <string name="selflearningfragment_title_testoffline">Luyện đề</string>
 
     <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
          from https://console.developers.google.com/ -->

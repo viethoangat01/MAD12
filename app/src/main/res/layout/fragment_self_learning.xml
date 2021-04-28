@@ -6,9 +6,153 @@
     tools:context=".view.fragment.SelfLearningFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="31dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Chào " />
+
+            <TextView
+                android:id="@+id/textview_selflearningfragment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An"
+                android:textColor="@color/colorBlueLogin"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Bạn muốn học gì hôm nay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/colorBannerMain"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon1"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/ic_selflearningfragment_thionline_90" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon1"
+                    android:text="@string/selflearningfragment_title_testonline"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon1"
+                    android:layout_marginLeft="21dp"
+                    android:textSize="18dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon1"
+                    android:text="@string/selflearningfragment_desc_testonline" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon2"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/ic_selflearningfragment_luyende_90" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon2"
+                    android:text="@string/selflearningfragment_title_testoffline"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon2"
+                    android:layout_marginLeft="21dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon2"
+                    android:text="@string/selflearningfragment_desc_testoffline" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_icon3"
+                    android:layout_width="89dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/ic_selflearningfragment_ontheochude_90" />
+
+                <TextView
+                    android:id="@+id/textview_selflearningfragment_titleicon3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon3"
+                    android:text="@string/selflearningfragment_title_revise"
+                    android:textStyle="bold"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textview_selflearningfragment_titleicon3"
+                    android:layout_marginLeft="21dp"
+                    android:textSize="18dp"
+                    android:layout_toRightOf="@id/textview_selflearningfragment_icon3"
+                    android:text="@string/selflearningfragment_desc_revise" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>
