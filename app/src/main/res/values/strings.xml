@@ -33,14 +33,8 @@
     <string name="selflearningfragment_title_testonline">Thi thử online</string>
     <string name="selflearningfragment_title_testoffline">Luyện đề</string>
 
-
-
-
-
-
-
-
-
-
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id">1026173673255-amhccf2sajs44u4gcghpr74gbq0m9p2s.apps.googleusercontent.com</string>
 
 </resources>
