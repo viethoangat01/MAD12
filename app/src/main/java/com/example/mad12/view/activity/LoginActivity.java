@@ -83,7 +83,9 @@ public class LoginActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                startActivity(new Intent(this,SecondActivity.class));
+                //Gửi IDToken đến server để xác thực
+                Log.d("Idtoken", "onActivityResult: "+account.getIdToken());
+                //startActivity(new Intent(this,SecondActivity.class));
 //
 //                // TODO(developer): send code to server and exchange for access/refresh/ID tokens
             } catch (ApiException e) {

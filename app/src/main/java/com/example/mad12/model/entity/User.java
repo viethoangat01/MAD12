@@ -1,4 +1,4 @@
-package com.example.mad12.model;
+package com.example.mad12.model.entity;
 
 import androidx.annotation.NonNull;
 import androidx.room.Entity;
@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "user_table")
 public class User {
     @PrimaryKey
+    @NonNull
     private String UserID;
     private String FirstName;
     private String LastName;
@@ -19,7 +20,7 @@ public class User {
     public User() {
     }
 
-    public User(String userID, String firstName, String lastName, @NonNull String userName, @NonNull String authType, String photo) {
+    public User(@NonNull String userID, String firstName, String lastName, @NonNull String userName, @NonNull String authType, String photo) {
         UserID = userID;
         FirstName = firstName;
         LastName = lastName;
@@ -28,11 +29,12 @@ public class User {
         Photo = photo;
     }
 
+    @NonNull
     public String getUserID() {
         return UserID;
     }
 
-    public void setUserID(String userID) {
+    public void setUserID(@NonNull String userID) {
         UserID = userID;
     }
 
