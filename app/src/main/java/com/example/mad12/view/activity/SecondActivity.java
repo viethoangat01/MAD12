@@ -29,7 +29,6 @@ import retrofit2.Response;
 
 public class SecondActivity extends AppCompatActivity {
     private UserViewModel userViewModel;
-    GoogleSignInClient mGoogleSignInClient;
     boolean session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,8 +70,6 @@ public class SecondActivity extends AppCompatActivity {
             //when user login first or logout value is false
             //Back to Login Activity
             //finish()
-
-
         }else{
             //when user logged in, value: is true
             Log.d("Session", "checkSession: true");

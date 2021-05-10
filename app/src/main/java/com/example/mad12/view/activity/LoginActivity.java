@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.mad12.R;
+import com.example.mad12.utils.Session;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -83,9 +84,13 @@ public class LoginActivity extends AppCompatActivity {
             Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
             try {
                 GoogleSignInAccount account = task.getResult(ApiException.class);
-                //Gửi IDToken đến server để xác thực
+                //Lưu tên tài khoản và ảnh profile vào sharepreference
                 Log.d("Idtoken", "onActivityResult: "+account.getIdToken());
-                //startActivity(new Intent(this,SecondActivity.class));
+                Session.save(getApplicationContext(),"token",account.getIdToken());
+                Session.save(getApplicationContext(),"email",account.getEmail());
+                Session.save(getApplicationContext(),"personName",account.getDisplayName());
+                Session.save(getApplicationContext(),"personPhoto",account.getPhotoUrl().toString());
+                startActivity(new Intent(this,MainActivity.class));
 //
 //                // TODO(developer): send code to server and exchange for access/refresh/ID tokens
             } catch (ApiException e) {
