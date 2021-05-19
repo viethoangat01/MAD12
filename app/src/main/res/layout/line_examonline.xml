@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginLeft="11dp"
+    android:layout_marginRight="11dp">
+    <TextView
+        android:id="@+id/textview_lineexamonline_logo"
+        android:layout_width="91dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/textview_lineexamonline_titleexam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thi thu lan 1"
+        android:layout_toRightOf="@+id/textview_lineexamonline_logo"
+        android:layout_marginTop="13dp"
+        android:textSize="20sp"
+        android:layout_marginLeft="7dp"
+        android:textColor="@android:color/black"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_below="@id/textview_lineexamonline_titleexam"
+        android:layout_toRightOf="@id/textview_lineexamonline_logo"
+        android:layout_marginLeft="7dp">
+        <TextView
+            android:id="@+id/textview_lineexamonline_icontime"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_all_back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/textview_lineexamonline_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/textview_lineexamonline_icontime"
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
