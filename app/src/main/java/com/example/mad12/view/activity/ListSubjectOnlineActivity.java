@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.mad12.R;
 
-public class ChooseSubjectOnlineActivity extends AppCompatActivity {
+public class ListSubjectOnlineActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_subject_online);
+        setContentView(R.layout.activity_list_subject_online);
     }
 }

@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.TestOnlineScheduleActivity">
+    tools:context=".view.activity.ListSubjectOnlineActivity">
     <RelativeLayout
-        android:id="@+id/relativelayout_testonlineschedule"
+        android:id="@+id/relativelayout_listsubjectonline"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:background="@color/colorBannerTestOnline">
         <TextView
-            android:id="@+id/textview_testonlineschedule_iconback"
+            android:id="@+id/textview_listsubjectonline_iconback"
             android:background="@drawable/ic_all_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -27,11 +27,10 @@
             />
     </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/relativelayout_testonlineschedule"
+        android:layout_below="@id/relativelayout_listsubjectonline"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/line_testonlineschedule"/>
-
+        tools:listitem="@layout/line_subjectonline" />
 
 
 </RelativeLayout>

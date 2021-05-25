@@ -16,7 +16,5 @@ public class Session {
     public static String read(Context context,String name,String defaultValue){
         SharedPreferences sharedPreferences=context.getSharedPreferences("session",Context.MODE_PRIVATE);
         return sharedPreferences.getString(name,defaultValue);
-
-
     }
 }
