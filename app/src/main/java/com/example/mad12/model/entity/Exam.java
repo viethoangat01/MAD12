@@ -18,24 +18,23 @@ public class Exam {
     private String ExamName;
     private String TimeStart;
     private String TimeEnd;
-    private boolean Status;
 
     public Exam() {
     }
 
-    public Exam(String examID, String examName, String timeStart, String timeEnd, boolean status) {
+    public Exam(@NonNull String examID, String examName, String timeStart, String timeEnd) {
         ExamID = examID;
         ExamName = examName;
         TimeStart = timeStart;
         TimeEnd = timeEnd;
-        Status = status;
     }
 
+    @NonNull
     public String getExamID() {
         return ExamID;
     }
 
-    public void setExamID(String examID) {
+    public void setExamID(@NonNull String examID) {
         ExamID = examID;
     }
 
@@ -61,13 +60,5 @@ public class Exam {
 
     public void setTimeEnd(String timeEnd) {
         TimeEnd = timeEnd;
-    }
-
-    public boolean isStatus() {
-        return Status;
-    }
-
-    public void setStatus(boolean status) {
-        Status = status;
     }
 }
