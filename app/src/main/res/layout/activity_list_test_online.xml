@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.ListSubjectOnlineActivity">
+    tools:context=".view.activity.ListTestOnlineActivity">
     <RelativeLayout
-        android:id="@+id/relativelayout_listsubjectonline"
+        android:id="@+id/relativelayout_listtestonline"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_alignParentTop="true"
         android:background="@color/colorBannerTestOnline">
         <TextView
-            android:id="@+id/textview_listsubjectonline_iconback"
+            android:id="@+id/textview_listtestonline_iconback"
             android:background="@drawable/ic_all_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"/>
         <TextView
+            android:id="@+id/textview_listtestonline_examname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/selflearningfragment_title_testonline"
@@ -27,10 +28,11 @@
             />
     </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@id/relativelayout_listsubjectonline"
+        android:id="@+id/recyclerview_listtestonline"
+        android:layout_below="@+id/relativelayout_listtestonline"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/line_subjectonline" />
+        tools:listitem="@layout/line_testonline" />
 
 
 </RelativeLayout>

@@ -9,34 +9,34 @@
     android:layout_marginTop="14dp">
 
     <TextView
-        android:id="@+id/textview_linesubjectonline_logo"
+        android:id="@+id/textview_linetestonline_logo"
         android:layout_width="91dp"
         android:layout_height="match_parent"
         android:background="@color/colorAccent"
         android:layout_alignParentLeft="true" />
 
     <TextView
-        android:id="@+id/textview_linesubjectonline_titleexam"
+        android:id="@+id/textview_linetestonline_titletest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lineexamonline_title_exam"
-        android:layout_toRightOf="@+id/textview_linesubjectonline_logo"
+        android:layout_toRightOf="@+id/textview_linetestonline_logo"
         android:layout_marginTop="15dp"
         android:textSize="20sp"
         android:layout_marginLeft="8dp"
         android:textColor="@android:color/black" />
 
     <RelativeLayout
-        android:id="@+id/relativelayout_linesubjectonline"
+        android:id="@+id/relativelayout_linetestonline"
         android:layout_width="match_parent"
         android:layout_height="19dp"
         android:layout_marginTop="7dp"
-        android:layout_below="@id/textview_linesubjectonline_titleexam"
-        android:layout_toRightOf="@id/textview_linesubjectonline_logo"
+        android:layout_below="@id/textview_linetestonline_titletest"
+        android:layout_toRightOf="@id/textview_linetestonline_logo"
         android:layout_marginLeft="8dp">
 
         <TextView
-            android:id="@+id/textview_linesubjectonline_starttitle"
+            android:id="@+id/textview_linetestonline_starttitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lineexamonline_title_start"
@@ -45,12 +45,12 @@
             android:layout_centerVertical="true" />
 
         <TextView
-            android:id="@+id/textview_linesubjectonline_starttime"
+            android:id="@+id/textview_linetestonline_starttime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"
             android:textSize="18sp"
-            android:layout_toRightOf="@+id/textview_linesubjectonline_logo"
+            android:layout_toRightOf="@+id/textview_linetestonline_logo"
             android:layout_marginLeft="75dp"
             android:layout_centerVertical="true"
             tools:ignore="NotSibling" />
@@ -60,12 +60,12 @@
         android:layout_width="match_parent"
         android:layout_height="19dp"
         android:layout_marginTop="7dp"
-        android:layout_below="@id/relativelayout_linesubjectonline"
-        android:layout_toRightOf="@id/textview_linesubjectonline_logo"
+        android:layout_below="@id/relativelayout_linetestonline"
+        android:layout_toRightOf="@id/textview_linetestonline_logo"
         android:layout_marginLeft="8dp">
 
         <TextView
-            android:id="@+id/textview_linesubjectonline_endtitle"
+            android:id="@+id/textview_linetestonline_endtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/lineexamonline_title_end"
@@ -74,12 +74,12 @@
             android:layout_centerVertical="true" />
 
         <TextView
-            android:id="@+id/textview_linesubjectonline_endtime"
+            android:id="@+id/textview_linetestonline_endtime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="00:00"
             android:textSize="18sp"
-            android:layout_toRightOf="@+id/textview_linesubjectonline_logo"
+            android:layout_toRightOf="@+id/textview_linetestonline_logo"
             android:layout_marginLeft="75dp"
             android:layout_centerVertical="true"
             tools:ignore="NotSibling" />

@@ -4,6 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.util.List;
 
 //Thông tin về câu hỏi trong 1 đề thi
@@ -14,17 +16,18 @@ public class Question {
     private int QuestionID;
     private String Description;
     private String SubjectID;
-    private List<String> Answer;
+    @SerializedName("Answer")
+    private List<String> answerList;
     private int Result;
 
     public Question() {
     }
 
-    public Question(int questionID, String description, String subjectID, List<String> answer, int result) {
+    public Question(int questionID, String description, String subjectID, List<String> answerList, int result) {
         QuestionID = questionID;
         Description = description;
         SubjectID = subjectID;
-        Answer = answer;
+        answerList = answerList;
         Result = result;
     }
 
@@ -53,11 +56,11 @@ public class Question {
     }
 
     public List<String> getAnswer() {
-        return Answer;
+        return answerList;
     }
 
     public void setAnswer(List<String> answer) {
-        Answer = answer;
+        answerList = answer;
     }
 
     public int getResult() {

@@ -1,33 +1,26 @@
 package com.example.mad12.model.entity;
 
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
 import com.google.gson.annotations.SerializedName;
 
+import java.io.Serializable;
 import java.util.List;
 
-//Thông tin chi tiết về bài thi online
-@Entity(tableName = "test_table")
-public class Test {
-    @PrimaryKey
+public class Test implements Serializable {
     @SerializedName("_id")
     private String TestID;
     private String TestName;
     private String SubjectID;
-    private List<String> TestType;
+    private String TestType;
     @SerializedName("Question")
-    private List<Question> questionList;
+    private List<String> questionList;
     private double TimeTotal;
     private String TimeStart;
     private String TimeEnd;
-    private Boolean Status;
 
     public Test() {
     }
 
-    public Test(String testID, String testName, String subjectID, List<String> testType, List<Question> questionList, double timeTotal, String timeStart, String timeEnd, Boolean status) {
+    public Test(String testID, String testName, String subjectID, String testType, List<String> questionList, double timeTotal, String timeStart, String timeEnd) {
         TestID = testID;
         TestName = testName;
         SubjectID = subjectID;
@@ -36,7 +29,6 @@ public class Test {
         TimeTotal = timeTotal;
         TimeStart = timeStart;
         TimeEnd = timeEnd;
-        Status = status;
     }
 
     public String getTestID() {
@@ -63,19 +55,19 @@ public class Test {
         SubjectID = subjectID;
     }
 
-    public List<String> getTestType() {
+    public String getTestType() {
         return TestType;
     }
 
-    public void setTestType(List<String> testType) {
+    public void setTestType(String testType) {
         TestType = testType;
     }
 
-    public List<Question> getQuestionList() {
+    public List<String> getQuestionList() {
         return questionList;
     }
 
-    public void setQuestionList(List<Question> questionList) {
+    public void setQuestionList(List<String> questionList) {
         this.questionList = questionList;
     }
 
@@ -101,13 +93,5 @@ public class Test {
 
     public void setTimeEnd(String timeEnd) {
         TimeEnd = timeEnd;
-    }
-
-    public Boolean getStatus() {
-        return Status;
-    }
-
-    public void setStatus(Boolean status) {
-        Status = status;
     }
 }

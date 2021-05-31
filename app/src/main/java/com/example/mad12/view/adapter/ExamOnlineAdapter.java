@@ -15,7 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mad12.R;
 import com.example.mad12.model.entity.Exam;
-import com.example.mad12.view.activity.ListSubjectOnlineActivity;
+import com.example.mad12.view.activity.ListTestOnlineActivity;
 import com.example.mad12.view.adapter.interfaces.ItemClickListener;
 
 public class ExamOnlineAdapter extends ListAdapter<Exam, ExamOnlineAdapter.ExamHolder> {
@@ -59,13 +59,13 @@ public class ExamOnlineAdapter extends ListAdapter<Exam, ExamOnlineAdapter.ExamH
             public void onClick(View view) {
                 Bundle bundle = new Bundle();
                 bundle.putString("ExamID", currentExam.getExamID());
-                Intent intent = new Intent(context, ListSubjectOnlineActivity.class);
+                bundle.putString("ExamName", currentExam.getExamName());
+                Intent intent = new Intent(context, ListTestOnlineActivity.class);
                 intent.putExtra("com.example.mad12.view.adapter", bundle);
                 context.startActivity(intent);
                 //Gửi thông tin mã cuộc thi sang màn môn thi online
             }
         });
-
     }
 
     public Exam getExamAt(int position) {
