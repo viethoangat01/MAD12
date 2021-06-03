@@ -1,6 +1,8 @@
 package com.example.mad12.view.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.mad12.R;
 import com.example.mad12.model.entity.Test;
+import com.example.mad12.utils.Function;
+import com.example.mad12.view.activity.ListTestOnlineActivity;
+import com.example.mad12.view.activity.TestingOnlineActivity;
 import com.example.mad12.view.adapter.interfaces.ItemClickListener;
 
 public class TestOnlineAdapter extends ListAdapter<Test, TestOnlineAdapter.TestHolder> {
@@ -48,10 +53,29 @@ public class TestOnlineAdapter extends ListAdapter<Test, TestOnlineAdapter.TestH
 
     @Override
     public void onBindViewHolder(@NonNull TestHolder holder, int position) {
-        Test test = getItem(position);
-        holder.txtTestName.setText(test.getTestName());
-        holder.txtTimeStart.setText(test.getTimeStart());
-        holder.txtTimeEnd.setText(test.getTimeEnd());
+        final Test test = getItem(position);
+        long timeNow = System.currentTimeMillis() / 1000;//Lấy timestamp hiện tại của hệ thống
+        long timeStart = Long.parseLong(test.getTimeStart());
+        long timeEnd = Long.parseLong(test.getTimeEnd());
+        //Kiểm tra thời gian hiện tại đã quá hạn thời gian cuộc thi chưa-> thực hiện xóa cuộc thi
+        if (timeNow <= timeEnd) {
+            holder.txtTestName.setText(test.getTestName());
+            holder.txtTimeStart.setText(Function.getDateFromTimestamp(test.getTimeStart()));
+            holder.txtTimeEnd.setText(Function.getDateFromTimestamp(test.getTimeEnd()));
+            holder.setItemClickListener(new ItemClickListener() {
+                @Override
+                public void onClick(View view, int position, boolean isLongClick) {
+                    if (!isLongClick) {
+                        //Gửi thông tin mã cuộc thi sang màn môn thi online
+                        Bundle bundle = new Bundle();
+                        bundle.putString("TestID", test.getTestID());
+                        Intent intent = new Intent(context, TestingOnlineActivity.class);
+                        intent.putExtra("com.example.mad12.view.adapter.TestOnlineAdapter", bundle);
+                        context.startActivity(intent);
+                    }
+                }
+            });
+        }
 
     }
 

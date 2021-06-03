@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
 import com.example.mad12.R;
 import com.example.mad12.model.entity.Exam;
@@ -19,9 +22,10 @@ import java.util.List;
 
 public class ListExamOnlineActivity extends AppCompatActivity {
     RecyclerView recyclerView;
-    ExamOnlineAdapter examAdapter;
     SwipeRefreshLayout swipeRefreshLayout;
     private ExamViewModel examViewModel;
+    ExamOnlineAdapter examAdapter;
+    private TextView txtBack;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +48,13 @@ public class ListExamOnlineActivity extends AppCompatActivity {
                 getExamList();
             }
         });
+        //Event Back
+        txtBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ListExamOnlineActivity.this, MainActivity.class));
+            }
+        });
     }
 
     //Get data Exam from Api
@@ -59,7 +70,7 @@ public class ListExamOnlineActivity extends AppCompatActivity {
                     long timeStart = Long.parseLong(exams.get(i).getTimeStart());
                     long timeEnd = Long.parseLong(exams.get(i).getTimeEnd());
                     //Kiểm tra thời gian hiện tại đã quá hạn thời gian cuộc thi chưa-> thực hiện xóa cuộc thi
-                    if (timeNow < timeStart || timeNow > timeEnd) {
+                    if (timeNow > timeEnd) {
                         exams.remove(i);
                     }
                 }
@@ -71,5 +82,6 @@ public class ListExamOnlineActivity extends AppCompatActivity {
     private void initView() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview_listexamonline);
         swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swiperefreshlayout_listexamonline);
+        txtBack = (TextView) findViewById(R.id.textview_listexamonline_iconback);
     }
 }

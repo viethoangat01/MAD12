@@ -2,6 +2,8 @@ package com.example.mad12.network;
 
 import com.example.mad12.model.entity.Exam;
 import com.example.mad12.model.entity.Test;
+import com.example.mad12.model.entity.TestWrapper;
+import com.example.mad12.model.entity.TestWrapper2;
 
 import java.util.List;
 
@@ -14,6 +16,9 @@ public interface RestApiService {
     Call<List<Exam>> getExamList();
 
     @GET("exams/{examID}/tests")
-    Call<List<Test>> getListTestByExamID(@Path("examID") String examId);
+    Call<List<TestWrapper>> getListTestByExamID(@Path("examID") String examId);
+
+    @GET("tests/{testID}")
+    Call<List<TestWrapper2>> getTestByID(@Path("testID") String testId);
 
 }

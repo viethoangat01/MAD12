@@ -43,4 +43,7 @@
          from https://console.developers.google.com/ -->
     <string name="server_client_id">1026173673255-amhccf2sajs44u4gcghpr74gbq0m9p2s.apps.googleusercontent.com</string>
 
+    <string name="testingonline_title_report">Báo lỗi</string>
+    <string name="testingonline_question">The diversity of customer’ s tastes has led to a greater....for a number of different clothing styles.</string>
+    <string name="testingonline_dialog_submit">Xác nhận hoàn thành bài thi?</string>
 </resources>

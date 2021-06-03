@@ -1,34 +1,25 @@
 package com.example.mad12.model.entity;
 
-import androidx.annotation.NonNull;
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
 import com.google.gson.annotations.SerializedName;
 
-import java.io.Serializable;
 import java.util.List;
 
-//Thông tin về bài kiểm tra
-@Entity(tableName = "test_table")
-public class Test implements Serializable {
-    @PrimaryKey
-    @NonNull
+public class TestWrapper2 {
     @SerializedName("_id")
     private String TestID;
     private String TestName;
     private String SubjectID;
     private List<String> TestType;
     @SerializedName("Question")
-    private List<String> questionList;
+    private List<Question> questionList;
     private double TimeTotal;
     private String TimeStart;
     private String TimeEnd;
 
-    public Test() {
+    public TestWrapper2() {
     }
 
-    public Test(@NonNull String testID, String testName, String subjectID, List<String> testType, List<String> questionList, double timeTotal, String timeStart, String timeEnd) {
+    public TestWrapper2(String testID, String testName, String subjectID, List<String> testType, List<Question> questionList, double timeTotal, String timeStart, String timeEnd) {
         TestID = testID;
         TestName = testName;
         SubjectID = subjectID;
@@ -39,12 +30,11 @@ public class Test implements Serializable {
         TimeEnd = timeEnd;
     }
 
-    @NonNull
     public String getTestID() {
         return TestID;
     }
 
-    public void setTestID(@NonNull String testID) {
+    public void setTestID(String testID) {
         TestID = testID;
     }
 
@@ -72,11 +62,11 @@ public class Test implements Serializable {
         TestType = testType;
     }
 
-    public List<String> getQuestionList() {
+    public List<Question> getQuestionList() {
         return questionList;
     }
 
-    public void setQuestionList(List<String> questionList) {
+    public void setQuestionList(List<Question> questionList) {
         this.questionList = questionList;
     }
 

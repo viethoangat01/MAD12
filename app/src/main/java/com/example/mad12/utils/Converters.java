@@ -8,6 +8,7 @@ import com.google.gson.reflect.TypeToken;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
+//Hỗ trợ lưu array vào room database
 public class Converters {
     @TypeConverter
     public static ArrayList<String> fromString(String value) {

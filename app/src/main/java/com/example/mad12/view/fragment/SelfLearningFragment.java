@@ -1,5 +1,6 @@
 package com.example.mad12.view.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,12 +12,13 @@ import android.widget.TextView;
 
 import com.example.mad12.R;
 import com.example.mad12.utils.Session;
+import com.example.mad12.view.activity.ListExamOnlineActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class SelfLearningFragment extends Fragment {
-    TextView txtName;
+    TextView txtName, txtTestOnline;
     public SelfLearningFragment() {
         // Required empty public constructor
     }
@@ -28,7 +30,15 @@ public class SelfLearningFragment extends Fragment {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_self_learning,container,false);
         initView(view);
+        //Đọc thôgn tin name trong preference và set cho textview
         getNameUser();
+        //Event go to test online
+        txtTestOnline.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ListExamOnlineActivity.class));
+            }
+        });
         return view;
     }
 
@@ -39,5 +49,6 @@ public class SelfLearningFragment extends Fragment {
 
     private void initView(View view) {
         txtName=(TextView) view.findViewById(R.id.textview_selflearningfragment_name);
+        txtTestOnline = (TextView) view.findViewById(R.id.textview_selflearningfragment_icon1);
     }
 }

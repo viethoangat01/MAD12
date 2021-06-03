@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.TestingOnlineActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_all_back" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview_main_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_main_user_40" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_testingonline"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_below="@id/imageview_main_profile"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBannerTestingOnline">
+
+                <TextView
+                    android:id="@+id/textview_testingonline_iconnote"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="13dp"
+                    android:background="@drawable/ic_main_home" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_iconskip"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/textview_testingonline_iconnote"
+                    android:background="@drawable/ic_main_home" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_numberskip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/textview_testingonline_iconskip"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="29dp"
+                    android:text="00:00"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_testingonline"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/relativelayout_testingonline"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Câu "
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_questionorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="0"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text=" | #"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_questioncode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:text="Code"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/relativelayout_testingonline"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/linearlayout_testingonline">
+
+                <TextView
+                    android:id="@+id/textview_testingonline_report"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/testingonline_title_report"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@id/textview_testingonline_report"
+                    android:background="@drawable/ic_main_document" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_testingonline_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearlayout_testingonline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorBannerTestOnline"
+                android:paddingBottom="20dp">
+
+                <TextView
+                    android:id="@+id/textview_testingonline_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/testingonline_question"
+                    android:textSize="22sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativelayout_testingonline_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/relativelayout_testingonline_question"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp">
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_testingonline"
+                    android:layout_width="81dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_testingonline_A"
+                        android:layout_width="81dp"
+                        android:layout_height="84dp"
+                        android:background="@drawable/testingonline_radiobutton_selector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="@drawable/testingonline_textcolor_selector"
+                        android:textSize="55sp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_testingonline_B"
+                        android:layout_width="81dp"
+                        android:layout_height="84dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/testingonline_radiobutton_selector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textColor="@drawable/testingonline_textcolor_selector"
+                        android:textSize="55sp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_testingonline_C"
+                        android:layout_width="81dp"
+                        android:layout_height="84dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/testingonline_radiobutton_selector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="C"
+                        android:textColor="@drawable/testingonline_textcolor_selector"
+                        android:textSize="55sp" />
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_testingonline_D"
+                        android:layout_width="81dp"
+                        android:layout_height="84dp"
+                        android:layout_marginTop="3dp"
+                        android:background="@drawable/testingonline_radiobutton_selector"
+                        android:button="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="D"
+                        android:textColor="@drawable/testingonline_textcolor_selector"
+                        android:textSize="55sp" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/textview_testingonline_answerA"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:textSize="21dp"
+                    android:paddingLeft="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:background="@color/colorBottomMain"
+                    android:layout_toRightOf="@id/radiogroup_testingonline" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_answerB"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textColor="@android:color/black"
+                    android:background="@color/colorBottomMain"
+                    android:layout_toRightOf="@id/radiogroup_testingonline"
+                    android:layout_below="@id/textview_testingonline_answerA" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_answerC"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textColor="@android:color/black"
+                    android:background="@color/colorBottomMain"
+                    android:layout_toRightOf="@id/radiogroup_testingonline"
+                    android:layout_below="@id/textview_testingonline_answerB" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_answerD"
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="21dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:textColor="@android:color/black"
+                    android:background="@color/colorBottomMain"
+                    android:layout_toRightOf="@id/radiogroup_testingonline"
+                    android:layout_below="@id/textview_testingonline_answerC" />
+
+            </RelativeLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar_testingonline"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_below="@id/relativelayout_testingonline_answer"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_below="@+id/progressbar_testingonline"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="24dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/textview_testingonline_back"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="4.5"
+                    android:background="@android:color/holo_red_light"
+                    android:gravity="center"
+                    android:text="Quay lại"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textview_testingonline_next"
+                    android:layout_width="0dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="4.5"
+                    android:background="@color/colorBannerTestOnline"
+                    android:gravity="center"
+                    android:text="Tiếp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

@@ -9,11 +9,13 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".view.activity.TestResultActivity"></activity>
+        <activity android:name=".view.activity.ListExamOnlineActivity" />
         <activity android:name=".view.activity.LoginActivity" />
         <activity android:name=".view.activity.ListTestOnlineActivity" />
-        <activity android:name=".view.activity.MainActivity" />
+        <activity android:name=".view.activity.TestingOnlineActivity" />
         <activity android:name=".view.activity.SecondActivity" />
-        <activity android:name=".view.activity.ListExamOnlineActivity">
+        <activity android:name=".view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
